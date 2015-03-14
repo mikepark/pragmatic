@@ -39,7 +39,9 @@
 #include <iostream>
 #include <vector>
 
+#ifdef _OPENMP
 #include <omp.h>
+#endif
 
 #include "Mesh.h"
 #include "VTKTools.h"

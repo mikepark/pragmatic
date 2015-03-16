@@ -18,6 +18,9 @@ FOREACH(item ${src_lite})
 ENDFOREACH(item)
 MESSAGE(STATUS "str_cite ${src_lite}")
 
+ADD_EXECUTABLE(test_export_ugrid_3d ${PRAGMATIC_TEST_SRC}/test_export_ugrid_3d.cpp ${src_lite})
+TARGET_LINK_LIBRARIES(test_export_ugrid_3d ${PRAGMATIC_LIBRARIES})
+
 ADD_EXECUTABLE(test_generate_Steiner_ellipse_3d ${PRAGMATIC_TEST_SRC}/test_generate_Steiner_ellipse_3d.cpp ${src_lite})
 TARGET_LINK_LIBRARIES(test_generate_Steiner_ellipse_3d ${PRAGMATIC_LIBRARIES})
 

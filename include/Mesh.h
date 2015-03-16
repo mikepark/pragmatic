@@ -1426,6 +1426,7 @@ template<typename real_t> class Mesh{
   template<typename _real_t, int _dim> friend class Refine;
   template<typename _real_t> friend class DeferredOperations;
   template<typename _real_t> friend class VTKTools;
+  template<typename _real_t> friend class UGrid;
   template<typename _real_t> friend class CUDATools;
 
   void _init(int _NNodes, int _NElements, const index_t *globalENList,
